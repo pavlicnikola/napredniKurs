@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: grey;
+    width: 60%;
+    margin: auto;
+}
+
+header {
+    height: 50vh;
+    width: 100%;
+    background-image: url("./slike/Nikola\ Timotic\ -\ banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header p {
+    width: 80%;
+    font-size: larger;
+}
+
+header div{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    padding: 1% 1.5%;
+    font-size: larger;
+    border-radius: 5px;
+}
+
+header h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5cm;
+}
+
+header p {
+    color: white;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    padding: 3%;
+    display: flex;
+    column-gap: 2rem;
+    height: 40vh;
+}
+
+main img {
+    border-radius: 100%;
+    border: 3px solid  rgb(192, 192, 192);
+    padding: 0.35%;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main a {
+    color: white;
+    background-color: cornflowerblue;
+    text-decoration: none;
+    padding: 1% 1.5%;
+    width: 17%;
+    border-radius: 5px;
+}
+
+.slike {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+#main2 {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 2rem;
+    background-color: cornflowerblue;
+    align-items: center;
+    padding: 4%;
+    height: 40vh;
+}
+
+#main2 img {
+    border-radius: 100%;
+    border: 3px solid  rgb(65, 109, 190);
+    padding: 0.35%;
+}
+
+#main2 section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+#main2 p {
+    color: white;
+}
+
+#main2 a {
+    background-color: white;
+    color: cornflowerblue;
+    text-decoration: none;
+    width: 17%;
+    padding: 1% 1.5%;
+    border-radius: 5px;
+}
+
+#main2 h1 {
+    color: white;
+}
+
+#main3 {
+    background-color: rgb(197, 197, 197);
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    margin-top: 3rem;
+}
+
+#main3 a {
+    color: white;
+    background-color: cornflowerblue;
+    text-decoration: none;
+    padding: 1% 1.5%;
+    width: 35%;
+    border-radius: 5px;
+}
+
+#main3 p {
+    color: rgb(155, 155, 155);
+}
+
+#main3 img {
+    border-radius: 100%;
+    border: 3px solid  rgb(187, 187, 187);
+    padding: 0.35%;
+    height: 250px;
+    width: 250px;
+}
+
+#main3 section {
+    display: flex;
+    column-gap: 2rem;
+    margin: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    clear: both;
+    height: 20vh;
+    background-color: white;
+}
+
+footer img {
+    height: 80px;
+    width: 150px;
+}
+
+footer p {
+    color: gray;
+}

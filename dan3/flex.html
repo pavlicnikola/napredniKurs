@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            /* row-gap: ; */
+            column-gap: 5rem;
+            height: 100vh;
+            background-color: aquamarine;
+            flex-wrap: nowrap;
+            /* flex-flow: ; */
+            /* align-content: ; */
+            /* align-self: ; */
+        }
+
+        #exp {
+            order: -1;
+        }
+
+        p{
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, ipsa impedit eaque minus veritatis ducimus corporis placeat asperiores dolorum cumque.
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, ipsa impedit eaque minus veritatis ducimus corporis placeat asperiores dolorum cumque.
+        </p>
+        <p id="exp">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, ipsa impedit eaque minus veritatis ducimus corporis placeat asperiores dolorum cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi non debitis omnis alias provident. Sint cupiditate in ad reiciendis aperiam!
+        </p>
+    </div>
+</body>
+</html>
