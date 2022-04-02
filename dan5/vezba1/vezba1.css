@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 70%;
+    margin: auto;
+    background-color: blueviolet;
+}
+
+header {
+    background-color: orange;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1cm;
+    padding: 1%;
+}
+
+main {
+    background-color: blue;
+    color: yellow;
+}
+
+footer {
+    background-color: orange;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1%;
+}
