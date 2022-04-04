@@ -19,12 +19,13 @@ nav {
     width: 40%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 a {
     text-decoration: none;
     color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -37,59 +38,195 @@ main {
     height: 70vh;
 }
 
-#pocetnaSlika {
+p {
+    line-height: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode';
+}
+
+#naslovnaSlika {
     background-image: url("./slike/@karolnienartowicz-Bieszczady-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 68%, 50% 100%, 0 68%);
+    clip-path: polygon(0 85%, 0% 0%, 100% 0%, 100% 85%, 50% 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 2rem;
-    height: 70vh;
-    filter: brightness(75%);
+    height: 80vh;
+    margin-bottom: 5%;
 }
 
-#pocetnaSlika h1 {
+#naslovnaSlika h1 {
     text-align: center;
-    text-transform: uppercase;
     color: white;
     font-size: 5rem;
     width: 50%;
 }
 
-#pocetnaSlika p {
+#naslovnaSlika p {
     text-align: center;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
-    width: 50%;
+    width: 40%;
 }
 
 main section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 2% 0;
-}
-
-#drugiDeo {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
-    width: 30%;
+    margin-bottom: 5%;
 }
 
 main section img {
-    height: 300px;
-    white-space: 300px;
+    height: 450px;
+    width: 400px;
 }
 
-main section a {
+#drugiDeo {
+    width: 30%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+section a, #sekcija a, #sekcija3 a {
+    text-align: center;
     color: white;
-    background-color: palevioletred;
-    padding: 1% 1.5%;
+    background-color: #f9cebd;
+    padding: 2%;
     border-radius: 30px;
-    width: 28%;
+    width: 25%;
+    font-size: 1rem;
+}
+
+#sekcija a {
+    width: 15%;
+}
+
+#naslov h1 {
+    font-size: 4rem;
+    color: #f9cebd;
+}
+
+#naslov {
+    height: 90px;
+}
+
+.position {
+    position: relative;
+    top: -40px;
+    right: -200px;
+    font-family: mojFont;
+    font-size: 2.5rem;
+    color: #625772;
+}
+
+#sekcija {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#naslov2 h1 {
+    color: #f9cebd;
+    font-size: 5rem;
+}
+
+.position2 {
+    position: relative;
+    top: -50px;
+    text-align: center;
+    font-family: mojFont;
+    font-size: 3.5rem;
+    color: #625772;
+}
+
+#naslov2 {
+    height: 130px;
+}
+
+#naslovnaSlika2 {
+    background-image: url("./slike/landscapebest_1-1500x1000.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 85%, 0% 0%, 100% 0%, 100% 85%, 50% 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    height: 80vh;
+    margin-bottom: 5%;
+}
+
+#naslovnaSlika2 h1 {
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    width: 50%;
+}
+
+#naslovnaSlika2 p {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 40%;
+}
+
+#sekcija2 {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    column-gap: 5%;
+    margin-bottom: 5%;
+}
+
+#sekcija2 img {
+    height: 100px;
+    width: 100px;
+}
+
+.ikonice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sekcija2 div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    text-align: center;
+}
+
+#sekcija2 a {
+    color: #f0885f;
+    font-size: 1rem;
+}
+
+#sekcija2 h2 {
+    color: #f9cebd;
+}
+
+#sekcija2 p {
+    font-style: italic;
+}
+
+#sekcija3 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+#sekcija3 img {
+    height: 450px;
 }
