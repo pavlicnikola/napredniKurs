@@ -82,6 +82,7 @@ main section {
 main section img {
     height: 450px;
     width: 400px;
+    box-shadow: 0px 10px 13px -7px #000000, -7px 12px 20px 1px #00BFFF;
 }
 
 #drugiDeo {
@@ -230,6 +231,7 @@ section a, #sekcija a, #sekcija3 a {
 #sekcija3 img {
     height: 450px;
     width: 400px;
+    box-shadow: 7px 8px 15px 8px #6D6D6D;
 }
 
 #naslovnaSlika3 {
@@ -296,7 +298,7 @@ section a, #sekcija a, #sekcija3 a {
 
 #sekcija6 {
     background-color: #625772;
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 25%);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0, 50% 25%);
 }
 
 #sekcija6 div {
@@ -305,7 +307,7 @@ section a, #sekcija a, #sekcija3 a {
     width: 70%;
     margin: auto;
     padding: 3%;
-    padding-top: 5%;
+    padding-top: 10%;
     border-bottom: 5px solid white;
 }
 
@@ -349,4 +351,248 @@ footer a {
     text-decoration: underline;
     font-size: 1rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode';
+}
+
+@media only screen and (max-width: 1740px) {
+    #drugiDeo a {
+        width: 35%;
+    }
+
+    #sekcija a {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    nav {
+        width: 70%;
+    }
+
+    #sekcija2 {
+        width: 90%;
+    }
+
+    #sekcija5 {
+        width: 90%;
+    }
+
+    #naslovnaSlika p {
+        width: 70%;
+    }
+
+    #naslovnaSlika2 p {
+        width: 70%;
+    }
+
+    #naslovnaSlika3 p {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1175px) {
+    #drugiDeo a {
+        width: 45%;
+    }
+
+    #drugiDeo p {
+        width: 130%;
+    }
+
+    #sekcija a {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    nav a {
+        font-size: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #naslovnaSlika, #naslovnaSlika2, #naslovnaSlika3 {
+        height: 60vh;
+    }
+
+    #naslovnaSlika h1 {
+        font-size: 3rem;
+    }
+
+    #naslovnaSlika2 h1 {
+        font-size: 3rem;
+    }
+
+    #naslovnaSlika3 h1 {
+        font-size: 3rem;
+    }
+
+    #drugiDeo h1 {
+        font-size: 3rem;
+    }
+
+    #drugiDeo .position {
+        font-size: 2rem;
+        left: 110px;
+    }
+
+    #drugiDeo p {
+        font-size: 0.9rem;
+    }
+
+    #drugiDeo a {
+        font-size: 0.8rem;
+        width: 45%;
+    }
+
+    #sekcija h1 {
+        font-size: 3rem;
+    }
+
+    #sekcija p {
+        font-size: 0.9rem;
+    }
+
+    #sekcija a {
+        font-size: 0.8rem;
+        width: 30%;
+    }
+
+     .position2 {
+        font-size: 2rem;
+        top: -30px;
+    }
+
+    #naslov2 {
+        height: 50px;
+    }
+
+    #sekcija2 p {
+        font-size: 0.9rem;
+    }
+
+    #sekcija4 h1 {
+        font-size: 3rem;
+    }
+
+    #sekcija5 h2 {
+        font-size: 1rem;
+    }
+
+    #sekcija5 p {
+        font-size: 0.9rem;
+    }
+
+    #sekcija6 a, #sekcija6 p {
+        font-size: 0.9rem;
+    }
+
+    #sekcija6 img {
+        height: 35px;
+        width: 35px;
+    }
+
+    #sekcija6 div {
+        padding-top: 15%;
+    }
+
+    footer a, footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    nav {
+        width: 65%;
+    }
+
+    #naslovnaSlika {
+        height: 40vh;
+    }
+
+    #naslovnaSlika2 {
+        height: 40vh;
+    }
+
+    #naslovnaSlika3 {
+        height: 40vh;
+    }
+
+    #naslovnaSlika h1 {
+        font-size: 2rem;
+    }
+
+    #naslovnaSlika2 h1 {
+        font-size: 2rem;
+    }
+
+    #naslovnaSlika3 h1 {
+        font-size: 2rem;
+    }
+
+    #naslovnaSlika p {
+        font-size: 0.7rem;
+    }
+
+    #naslovnaSlika2 p {
+        font-size: 0.7rem;
+    }
+
+    #naslovnaSlika3 p {
+        font-size: 0.7rem;
+    }
+    
+    #naslov {
+        height: 15px;
+    }
+
+    #naslov h1, #naslov2 h1 {
+        font-size: 2rem;
+    }
+
+    #drugiDeo .position {
+        font-size: 1.5rem;
+        top: -30px;
+        left: 50px;
+    }
+
+    #drugiDeo {
+        row-gap: 1.5rem;
+    }
+
+    #drugiDeo p {
+        width: 110%;
+    }
+
+    #drugiDeo a, #drugiDeo p, #sekcija a, #sekcija p, #sekcija2 a, #sekcija2 p, #sekcija5 p, #sekcija6 p, #sekcija6 a, footer p, footer a {
+        font-size: 0.7rem;
+    }
+
+    #sekcija2 img {
+        height: 35px;
+        width: 35px;
+    }
+
+    #sekcija5 h2 {
+        font-size: 0.8rem;
+    }
+
+    .position2 {
+        top: -20px;
+        font-size: 1.5rem;
+    }
+
+    #sekcija2 div, #sekcija5 div {
+        row-gap: 1rem;
+    }
+
+    #sekcija2 div h2 {
+        font-size: 0.8rem;
+    }
+
+    #divSlika img {
+        height: 375px;
+        width: 275px;
+    }
 }
