@@ -88,6 +88,36 @@ footer img {
     flex-direction: column;
 }
 
+@media only screen and (max-width: 1030px) {
+    nav {
+        width: 50%;
+    }
+
+    main img {
+        width: 200px;
+        height: 200px;
+    }
+
+    footer div {
+        width: 19%;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    nav {
+        width: 50%;
+    }
+    
+    main img {
+        height: 300px;
+        width: 300px;
+    }
+}
+
 @media only screen and (max-width: 770px) {
     header {
         flex-direction: column;
@@ -121,8 +151,8 @@ footer img {
     }
 
     footer div {
-        margin: 2% 7%;
-        width: 35%;
+        margin: 2%;
+        width: 32%;
     }
 }
 
@@ -155,7 +185,7 @@ footer img {
 
     footer div {
         margin: 5% 0;
-        margin-left: 20%;
+        margin-left: 10%;
         width: 70%;
     }
 }
