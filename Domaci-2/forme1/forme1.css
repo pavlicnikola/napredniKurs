@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 40%;
+    margin: auto;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+legend {
+    background-color: white;
+    border: 1px solid black;
+    margin-left: 2rem;
+}
+
+fieldset {
+    background-color: white;
+    border: 1px solid black;
+}
+
+fieldset div {
+    margin: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 40%;
+}
+
+#data {
+    width: 20%;
+}
