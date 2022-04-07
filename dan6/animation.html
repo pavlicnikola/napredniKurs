@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            margin: auto;
+            /* margin-top: 100px; */
+            position: relative;
+            animation-name: imeAnimacije;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            /* animation-delay: ; */
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            /* animation-play-state: running; */
+            /* animation-fill-mode: forwards; */
+        }
+
+        @keyframes imeAnimacije {
+            /* from {
+                background-color: blue;
+            }
+
+            to {
+                background-color: yellow;
+            } */
+
+            0% {
+                background-color: blue;
+                top: 0;
+                left: 0;
+            }
+
+            25% {
+                background-color: yellow;
+                top: 0;
+                left: 500px;
+            }
+
+            50% {
+                background-color: green;
+                top: 500px;
+                left: 500px;
+            }
+
+            75% {
+                background-color: yellow;
+                top: 500px;
+                left: 0;
+            }
+
+            100% {
+                background-color: blue;
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS ANIMATION</h1>
+
+    <div>
+
+    </div>
+</body>
+</html>
