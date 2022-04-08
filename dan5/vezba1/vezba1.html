@@ -13,40 +13,24 @@
     </header>
 
     <form action="">
-        <aside>
-            <p>First Name</p>
-
-            <p>Last Name</p>
-
-            <p>Date of Birth</p>
-
-            <p>Gender</p>
-
-            <p>Country</p>
-
-            <p>Email</p>
-
-            <p>Phone</p>
-
-            <p>Password</p>
-
-            <p>Change password</p>
-        </aside>
-
         <main>
             <div>
+                <label for="ime">First Name</label>
                 <input type="text" name="name" id="ime" placeholder="Enter First Name">
             </div>
 
             <div>
+                <label for="prezime">Last Name</label>
                 <input type="text" name="surname" id="prezime" placeholder="Enter Last Name">
             </div>
 
-            <div>
+            <div class="date">
+                <label for="date">Date of Birth</label>
                 <input type="date" name="date" id="date">
             </div>
 
             <div class="gender">
+                <p>Gender</p>
                 <label for="Male">Male</label>
                 <input type="radio" name="gender" id="Male" value="Male">
 
@@ -54,8 +38,8 @@
                 <input type="radio" name="gender" id="Female" value="Female">
             </div>
 
-            <div>
-                
+            <div class="country">
+                <label for="country">Country</label>
                 <select name="country" id="country">
                     <option value="" disabled selected>country</option>
                     <option value="">Srbija</option>
@@ -67,20 +51,24 @@
                 </select>
             </div>
 
-            <div>
+            <div class="email">
+                <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Enter E-mail">
             </div>
 
-            <div>
+            <div class="phone">
+                <label for="phone">Phone</label>
                 <input type="tel" name="phone" id="phone" placeholder="Enter Phone">
             </div>
 
-            <div>
+            <div class="password">
+                <label for="password">Password</label>
                 <input type="password" name="password" id="password">
             </div>
 
-            <div>
-                <input type="password" name="password" id="password">
+            <div class="conPass">
+                <label for="confPassword">Change Password</label>
+                <input type="password" name="confPassword" id="confPassword">
             </div>
 
             <div class="checkbox">
