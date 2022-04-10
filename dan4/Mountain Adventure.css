@@ -412,7 +412,7 @@ footer a {
         font-size: 2rem;
     }
 
-    #naslovnaSlika, #naslovnaSlika2, #naslovnaSlika3 {
+    #naslovnaSlika, #naslovnaSlika2, #naslovnaSlika3, main {
         height: 60vh;
     }
 
@@ -507,7 +507,7 @@ footer a {
         width: 65%;
     }
 
-    #naslovnaSlika {
+    #naslovnaSlika, main {
         height: 40vh;
     }
 
@@ -594,5 +594,107 @@ footer a {
     #divSlika img {
         height: 375px;
         width: 275px;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    #drugiDeo a, #drugiDeo p, #sekcija a, #sekcija p, #sekcija2 a, #sekcija2 p, #sekcija5 p, #sekcija6 p, #sekcija6 a, footer p, footer a, nav a, #naslovnaSlika p, #naslovnaSlika2 p, #naslovnaSlika3 p {
+        font-size: 0.5rem;
+    }
+
+    #drugiDeo p {
+        width: 100%;
+    }
+
+    #drugiDeo .position, .position2 {
+        font-size: 0.7rem;
+        top: -10px;
+    }
+
+    #sekcija2 {
+        column-gap: 0.5rem;
+    }
+
+    #sekcija {
+        row-gap: 0.5rem;
+    }
+
+    h2 {
+        font-size: 0.6rem;
+    }
+
+    header h1, #naslov h1, #naslov2 h1, #naslovnaSlika h1, #naslovnaSlika2 h1, #naslovnaSlika3 h1 {
+        font-size: 1rem;
+    }
+
+    #naslov {
+        height: 10px;
+    }
+
+    #naslovnaSlika, #naslovnaSlika2, #naslovnaSlika3, main {
+        height: 35vh;
+    }
+
+    #sekcija4 {
+        margin-bottom: 2%;
+    }
+
+    #divSlika img {
+        height: 375px;
+        width: 225px;
+    }
+
+    #sekcija2 img, #sekcija6 img {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    p {
+        line-height: 1rem;
+    }
+
+    nav {
+        width: 75%;
+    }
+
+    #drugiDeo a {
+        width: 70%;
+    }
+
+    #sekcija a {
+        width: 50%;
+    }
+
+    #sekcija5 h2 {
+        font-size: 0.55rem;
+    }
+
+    #sekcija6 div {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    p {
+        line-height: 0.7rem;
+    }
+
+    #divSlika img {
+        height: 320px;
+        width: 200px;
+    }
+
+    #drugiDeo {
+        height: 320px;
+    }
+
+    #drugiDeo .position {
+        left: 35px;
+    }
+
+    #sekcija6 div {
+        width: 90%;
     }
 }
