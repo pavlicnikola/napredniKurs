@@ -38,7 +38,7 @@ const treciH2 = document.createElement('h2')
 treciH2.innerHTML = `Kontakt <sub>vazno<sub>`
 
 const mojAddress = document.createElement('address')
-mojAddress.innerHTML = `Nasa kompanija <br> Ime Ulica,<br> br. 49 Beograd,<b> Serbia.<b>`
+mojAddress.innerHTML = `Nasa kompanija<br> Ime Ulica, br. 49<br> Beograd,<br> Serbia.`
 
 body.style.backgroundColor = 'grey'
 mojH1.style.textAlign = 'center'
