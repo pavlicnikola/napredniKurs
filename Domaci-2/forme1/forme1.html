@@ -8,7 +8,7 @@
     <title>Forme 1</title>
 </head>
 <body>
-    <fieldset>
+    <fieldset id="prvi">
         <legend>Personal Information</legend>
 
         <div>
@@ -23,11 +23,11 @@
 
         <div>
             <p>Email</p>
-            <input type="email" name="email" id="email">
-    </div>
+            <input type="email" name="email" id="email" placeholder="nekiEmail@gmail.com">
+        </div>
 
-        <div>
-            <p>Gender</p>
+        <div class="gender">
+            <label for="pol">Gender</label>
             <select name="Gender" id="pol">
                 <option value="Choose" disabled selected>Choose</option>
                 <option value="Male">Male</option>
@@ -37,14 +37,50 @@
 
     </fieldset>
 
-    <fieldset>
+    <fieldset id="drugi">
         <legend>Your Favourites</legend>
 
+        <div>
+            <label for="editor">Choose Your Editor</label>
 
+            <div class="radio">
+                <label for="VSC">VSC</label>
+                <input type="radio" name="editor" id="VSC" value="VSC">
+            </div>
 
+            <div class="radio">
+                <label for="Sublime text">Sublime Text</label>
+                <input type="radio" name="editor" id="Sublime text" value="Sublime text">
+            </div>
+
+            <div class="radio">
+                <label for="Note ++">Note ++</label>
+                <input type="radio" name="editor" id="Note ++" value="Note ++">
+            </div>
+        </div>
+
+        <div class="browser">
+            <label for="browser">Choose Your Browser</label>
+            <input type="radio" name="browser" id="browser" value="Google chrome">
+            <input type="radio" name="browser" id="browser" value="Opera">
+            <input type="radio" name="browser" id="browser" value="Firefox">
+        </div>
+
+        </div>
+            <label for="Operating system">Choose Your Operating System</label>
+
+            <label for="Windows">Windows</label>
+            <input type="checkbox" name="Operating system" id="Windows" value="Windows">
+
+            <label for="Macintosh">Macintosh</label>
+            <input type="checkbox" name="Operating system" id="Macintosh" value="Macintosh">
+
+            <label for="Linux">Linux</label>
+            <input type="checkbox" name="Operating system" id="Linux" value="Linux">
+        </div>
     </fieldset>
 
-    <fieldset>
+    <fieldset id="treci">
         <legend>Your Message</legend>
 
         <div>

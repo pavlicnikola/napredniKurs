@@ -25,12 +25,31 @@ fieldset {
     border: 1px solid black;
 }
 
-fieldset div {
+#prvi div, #treci div {
     margin: 1rem 2rem;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
     width: 40%;
+}
+
+.gender {
+    width: 15%;
+}
+
+#drugi {
+    margin: 2% 0;
+}
+
+#drugi div {
+    width: 90%;
+    margin: auto;
+}
+
+.browser {
+    padding: 1%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 #data {
