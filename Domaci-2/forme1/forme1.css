@@ -39,6 +39,10 @@ fieldset {
 
 #drugi {
     margin: 2% 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 2% 0;
 }
 
 #drugi div {
@@ -50,6 +54,24 @@ fieldset {
     padding: 1%;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.editor, .system {
+    display: flex;
+    flex-direction: column;
+}
+
+.editor, .browser, .system {
+    row-gap: 1rem;
+}
+
+.browser div, .editor div, .system div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    column-gap: 1rem;
 }
 
 #data {

@@ -8,88 +8,114 @@
     <title>Forme 1</title>
 </head>
 <body>
-    <fieldset id="prvi">
-        <legend>Personal Information</legend>
+    <form action="imeFajla" method="get">
+        <fieldset id="prvi">
+            <legend>Personal Information</legend>
 
-        <div>
-            <p>Your name</p>
-            <input type="text" name="username" id="username" placeholder="username..." required>
-        </div>
-
-        <div>
-            <p>Password</p>
-            <input type="password" name="password" id="password">
-        </div>
-
-        <div>
-            <p>Email</p>
-            <input type="email" name="email" id="email" placeholder="nekiEmail@gmail.com">
-        </div>
-
-        <div class="gender">
-            <label for="pol">Gender</label>
-            <select name="Gender" id="pol">
-                <option value="Choose" disabled selected>Choose</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-            </select>
-        </div>
-
-    </fieldset>
-
-    <fieldset id="drugi">
-        <legend>Your Favourites</legend>
-
-        <div>
-            <label for="editor">Choose Your Editor</label>
-
-            <div class="radio">
-                <label for="VSC">VSC</label>
-                <input type="radio" name="editor" id="VSC" value="VSC">
+            <div>
+                <p>Your name</p>
+                <input type="text" name="username" id="username" placeholder="username..." required>
             </div>
 
-            <div class="radio">
-                <label for="Sublime text">Sublime Text</label>
-                <input type="radio" name="editor" id="Sublime text" value="Sublime text">
+            <div>
+                <p>Password</p>
+                <input type="password" name="password" id="password">
             </div>
 
-            <div class="radio">
-                <label for="Note ++">Note ++</label>
-                <input type="radio" name="editor" id="Note ++" value="Note ++">
+            <div>
+                <p>Email</p>
+                <input type="email" name="email" id="email" placeholder="nekiEmail@gmail.com">
             </div>
-        </div>
 
-        <div class="browser">
-            <label for="browser">Choose Your Browser</label>
-            <input type="radio" name="browser" id="browser" value="Google chrome">
-            <input type="radio" name="browser" id="browser" value="Opera">
-            <input type="radio" name="browser" id="browser" value="Firefox">
-        </div>
+            <div class="gender">
+                <label for="pol">Gender</label>
+                <select name="Gender" id="pol">
+                    <option value="Choose" disabled selected>Choose</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
 
-        </div>
-            <label for="Operating system">Choose Your Operating System</label>
+        </fieldset>
 
-            <label for="Windows">Windows</label>
-            <input type="checkbox" name="Operating system" id="Windows" value="Windows">
+        <fieldset id="drugi">
+            <legend>Your Favourites</legend>
 
-            <label for="Macintosh">Macintosh</label>
-            <input type="checkbox" name="Operating system" id="Macintosh" value="Macintosh">
+            <div class="editor">
+                <label for="editor">Choose Your Editor</label>
+                
+                <section>
+                    <div>
+                        <label for="VSC">VSC</label>
+                        <input type="radio" name="editor" id="VSC">
+                    </div>
 
-            <label for="Linux">Linux</label>
-            <input type="checkbox" name="Operating system" id="Linux" value="Linux">
-        </div>
-    </fieldset>
+                    <div>
+                        <label for="Sublime text">Sublime Text</label>
+                        <input type="radio" name="editor" id="Sublime text">
+                    </div>
 
-    <fieldset id="treci">
-        <legend>Your Message</legend>
+                    <div>
+                        <label for="Note ++">Note ++</label>
+                        <input type="radio" name="editor" id="Note ++">
+                    </div>
+                </section>
+            </div>
 
-        <div>
-            <textarea name="msg" id="msg" cols="20" rows="20"></textarea>
-        </div>
+            <div class="browser">
+                <label for="browser">Choose Your Browser</label>
 
-        <div id="data">
-            <input type="submit" value="Send Your Data">
-        </div>
-    </fieldset>
+                <section>
+                    <div>
+                        <label for="google">Google chrome</label>
+                        <input type="radio" name="browser" id="google">
+                    </div>
+
+                    <div>
+                        <label for="Opera">Opera</label>
+                        <input type="radio" name="browser" id="Opera">
+                    </div>
+
+                    <div>
+                        <label for="Firefox">Firefox</label>
+                        <input type="radio" name="browser" id="Firefox">
+                    </div>
+                </section>
+            </div>
+
+            <div class="system">
+                <label for="Operating system">Choose Your Operating System</label>
+
+                <section>
+                    <div>
+                        <label for="Windows">Windows</label>
+                        <input type="checkbox" name="Operating system" id="Windows" value="Windows">
+                    </div>
+
+                    <div>
+                        <label for="Macintosh">Macintosh</label>
+                        <input type="checkbox" name="Operating system" id="Macintosh" value="Macintosh">
+                    </div>
+
+                    <div>
+                        <label for="Linux">Linux</label>
+                        <input type="checkbox" name="Operating system" id="Linux" value="Linux">
+                    </div>
+                </section>
+            </div>
+        </fieldset>
+
+        <fieldset id="treci">
+            <legend>Your Message</legend>
+
+            <div>
+                <textarea name="msg" id="msg" cols="20" rows="20"></textarea>
+            </div>
+
+            <div id="data">
+                <input type="submit" value="Send Your Data">
+            </div>
+        </fieldset>
+    </form>
 </body>
 </html>
