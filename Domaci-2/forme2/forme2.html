@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domaci</title>
+    <link rel="stylesheet" href="./forme2.css">
+</head>
+<body>
+    <h1>Welcome to the 24x7 Fitness Club: Courts Reservation Page!!</h1>
+
+    <form action="imeFajla" method="get">
+        <fieldset>
+            <legend>Member Demographics</legend>
+
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="email" id="name" required>
+            </div>
+
+            <div id="member">
+                <label for="">Are you a Member?</label>
+
+                <section>
+                    <div>
+                        <label for="non-member">Non-member</label>
+                        <input type="radio" name="non-member" id="non-member" required>
+                    </div>
+
+                    <div>
+                        <label for="member">Member</label>
+                        <input type="radio" name="member" id="member" required>
+                    </div>
+                </section>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+        </fieldset>
+
+        <div id="drugiDeo">
+            <div>
+                <label for="facility">Facility</label>
+
+                <select name="facility" id="facility" required>
+                    <option value="choose" disabled selected>Choose</option>
+                    <option value="Badminton">Badminton</option>
+                    <option value="Tennis">Tennis</option>
+                    <option value="Football">Football</option>
+                    <option value="Basketball">Basketball</option>
+                    <option value="Handball">Handball</option>
+                </select>
+            </div>
+
+            <div id="reservation">
+                <label>Select a reservation date and time:</label>
+
+                <div>
+                    <input type="date" name="date" id="date" required>
+                    <input type="time" name="time" id="time"  required>
+                </div>
+            </div>
+
+            <div class="terms">
+                <label for="agree">I agree to the clubs reservation policy</label>
+                <input type="checkbox" id="agree" required>
+            </div>
+
+            <div>
+                <input type="submit" value="SUBMIT">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
