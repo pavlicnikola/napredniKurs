@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: skyblue;
+    height: 25vh;
+}
+
+main {
+    background-color: green;
+    height: 25vh;
+}
+
+#div1 {
+    background-color: grey;
+    height: 20vh;
+    border-top: 10px solid rgb(204, 204, 204);
+    border-bottom: 10px dashed rgb(204, 204, 204);
+}
+
+#div2 {
+    background-color: grey;
+    height: 20vh;
+    border-bottom: 10px solid rgb(204, 204, 204);
+}
