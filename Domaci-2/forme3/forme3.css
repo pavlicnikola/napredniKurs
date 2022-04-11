@@ -3,3 +3,70 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+form {
+    border: 3px solid black;
+    width: 60%;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    background-color: rgb(255, 255, 132);
+    color: rgb(255, 43, 43);
+    text-align: center;
+    width: 99%;
+    margin: 0.5% auto;
+}
+
+table {
+    width: 99%;
+    margin: 0.5% auto;
+}
+
+td, .footer {
+    border: 5px solid white;
+    background-color: cornflowerblue;
+    padding: 3px 30px;
+}
+
+.inp {
+    width: 100%;
+    margin: auto;
+    background-color: greenyellow;
+    border: 2px solid;
+    border-style: outset;
+}
+
+.sportovi {
+    display: flex;
+    flex-direction: column;
+}
+
+.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.footer {
+    width: 99%;
+    margin: auto;
+    text-align: center;
+}
+
+.povecanje {
+    padding: 1% 10%;
+    background-color: greenyellow;
+    border: 2px solid;
+    border-style: outset;
+}
+
+.boja {
+    background-color: greenyellow;
+    padding: 0.2%;
+}

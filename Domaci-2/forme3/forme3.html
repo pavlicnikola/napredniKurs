@@ -5,8 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domaci</title>
+    <link rel="stylesheet" href="./forme3.css">
 </head>
 <body>
-    
+    <form action="imeFajla" class="container" method="get">
+        <h1>User Form</h1>
+
+        <table>
+            <tr>
+                <td> <label for="name">Enter Name</label> </td>
+                <td> <input class="inp" type="text" name="name" id="name"> </td>
+            </tr>
+            
+            <tr>
+                <td> <label for="password">Enter Password</label> </td>
+                <td> <input class="inp" type="password" name="password" id="password"> </td>
+            </tr>
+
+            <tr>
+                <td> <label for="address">Enter Address</label> </td>
+                <td> <textarea class="inp" name="address" id="address" cols="30" rows="5" placeholder=" Country, City, Street..."></textarea> </td>
+            </tr>
+
+            <tr>
+                <td>Select Game</td>
+                <td class="sportovi">
+                    <div class="reverse">
+                        <label for="Hockey">Hockey</label>
+                        <input type="checkbox" name="sport" id="Hockey">
+                    </div>
+
+                    <div class="reverse">
+                        <label for="Football">Football</label>
+                        <input type="checkbox" name="sport" id="Football">
+                    </div>
+
+                    <div class="reverse">
+                        <label for="Bagminton">Bagminton</label>
+                        <input type="checkbox" name="sport" id="Bagminton">
+                    </div>
+
+                    <div class="reverse">
+                        <label for="Cricket">Cricket</label>
+                        <input type="checkbox" name="sport" id="Cricket">
+                    </div>
+
+                    <div class="reverse">
+                        <label for="Volleyball">Volleyball</label>
+                        <input type="checkbox" name="sport" id="Volleyball">
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td class="reverse">
+                    <label for="Male">Male</label>
+                    <input type="radio" name="Male" id="Male">
+
+                    <label for="Female">Female</label>
+                    <input type="radio" name="Female" id="Female">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select your age</td>
+                <td>
+                    <select class="inp" name="age" id="">
+                        <option value="age" selected disabled>please select...</option>
+                        <option value="age">1</option>
+                        <option value="age">2</option>
+                        <option value="age">3</option>
+                        <option value="age">4</option>
+                        <option value="age">5</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <div class="footer">
+            <input class="boja" type="file" name="file">
+        </div>
+
+        <div class="footer">
+            <input class="povecanje" type="reset" name="reset">
+            <input class="povecanje" type="submit" name="submit">
+        </div>
+    </form>
 </body>
 </html>
