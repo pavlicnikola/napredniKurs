@@ -4,25 +4,75 @@
     box-sizing: border-box;
 }
 
-header {
+#nebo {
     background-color: skyblue;
-    height: 25vh;
+    height: 30vh;
+    overflow: hidden;
+    position: relative;
 }
 
-main {
+#trava {
     background-color: green;
     height: 25vh;
 }
 
-#div1 {
+#traka1 {
     background-color: grey;
     height: 20vh;
     border-top: 10px solid rgb(204, 204, 204);
     border-bottom: 10px dashed rgb(204, 204, 204);
+    overflow: hidden;
 }
 
-#div2 {
+#traka2 {
     background-color: grey;
     height: 20vh;
     border-bottom: 10px solid rgb(204, 204, 204);
+    overflow: hidden;
+}
+
+@keyframes levo {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(-2700px);
+    }
+}
+
+#maliOblak {
+    width: 7%;
+    opacity: 70%;
+    position: absolute;
+    right: -500px;
+    animation: levo 23s ease-out infinite;
+    
+}
+
+#oblak {
+    position: absolute;
+    right: -300px;
+    animation: levo 20s ease-out infinite;
+}
+
+@keyframes desno {
+    0% {
+        transform: translate(0px);
+    }
+    100% {
+        transform: translate(2700px);
+    }
+}
+
+#mario {
+    position: relative;
+    left: -300px;
+    animation: desno ease-in-out 3s infinite;
+}
+
+#luigi {
+    position: relative;
+    left: -300px;
+    animation: desno ease-in-out 4s infinite;
 }
