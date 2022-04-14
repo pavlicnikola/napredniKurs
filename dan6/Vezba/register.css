@@ -16,7 +16,7 @@ body {
 
 form {
     width: 60%;
-    height: 80vh;
+    height: 90vh;
     margin: auto;
     background-color: #0e0c1f;
     border: 3px solid #3f43bc;
@@ -45,10 +45,6 @@ form {
     100% {
         filter: drop-shadow(0 0 0px #68e0cc);
     }
-}
-
-h1  {
-    margin-top: 5%;
 }
 
 main {
@@ -83,6 +79,27 @@ input {
     font-size: 1.3rem;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
+}
+
+::placeholder {
+    color: #68e0cc;
+    opacity: 0.5;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+    position: relative;
+    right: 70px;
+    cursor: pointer;
+    background: #68e0cc;
+    border-radius: 5px;
+    height: 20px;
+    width: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator:hover {
+    background: #4f43bc;
 }
 
 input:focus {
