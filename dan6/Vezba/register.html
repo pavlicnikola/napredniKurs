@@ -8,6 +8,56 @@
     <link rel="stylesheet" href="./register.css">
 </head>
 <body>
-    
+    <form action="imeFajla" method="get">
+        <h1>REGISTER</h1>
+
+        <main>
+            <section>
+                <div>
+                    <label for="name">FIRST NAME</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+        
+                <div>
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                </div>
+        
+                <div>
+                    <label for="date">DATE OF BIRTH</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+        
+                <div>
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" name="phone" id="phone" placeholder="+381/6X-XXX-XXXX" required>
+                </div>
+            </section>
+        
+            <section>
+                <div>
+                    <label for="username">USERNAME</label>
+                    <input type="text" name="username" id="username" required>
+                </div>
+        
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+        
+                <div>
+                    <label for="newpass">PASSWORD</label>
+                    <input type="password" name="newpass" id="newpass" required>
+                </div>
+        
+                <div>
+                    <label for="confpass">CONFIRM PASSWORD</label>
+                    <input type="password" name="confpass" id="confpass" required>
+               </div>
+            </section>
+        </main>
+
+        <input type="submit" value="REGISTER">
+    </form>
 </body>
 </html>
