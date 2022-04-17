@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vezba</title>
+    <script src="./musterije.js" defer></script>
+    <style>
+        #ispisMusterija {
+            height: 50vh;
+            width: 80%;
+            margin: 5% auto;
+            border: 2px solid black;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="ImeMusterije">Ime :</label>
+        <input type="text" name="ime-musterije" id="ime">
+    </div>
+
+    <div>
+        <label for="brojStola">Sto :</label>
+        <input type="text" name="broj-stola" id="sto">
+    </div>
+
+    <div>
+        <label for="racun">Racun :</label>
+        <input type="text" name="racun" id="racun">
+    </div>
+
+    <div>
+        <button id="unos">Unost musterija</button>
+        <button id="ispis">Ispis musterija</button>
+    </div>
+
+    <div id="ispisMusterija">
+        <!-- <div>
+            <p>Ime musterije: Ime</p>
+            <p>Broj stola: Broj</p>
+            <p>Racun: cena</p>
+        </div>
+
+        <div>
+            <p>Ime musterije: Ime</p>
+            <p>Broj stola: Broj</p>
+            <p>Racun: cena</p>
+        </div> -->
+    </div>
+</body>
+</html>
