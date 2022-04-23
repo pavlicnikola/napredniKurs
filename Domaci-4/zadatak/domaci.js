@@ -3,9 +3,10 @@ let niz = []
 
 for (let i = 0; i < 20; i++) {
     let generator = Math.floor(Math.random() * 20) + 1
-    if(generator != niz[i]) {
-        niz.push(generator)
+    while(niz.includes(generator)) {
+        generator = Math.floor(Math.random() * 20) + 1
     }
+    niz.push(generator)
 }
 
 console.log(niz);
