@@ -109,3 +109,40 @@ nav a {
     width: 150px;
     height: 100px;
 }
+
+.container {
+    height: 120vh;
+    background-color: rgb(240, 240, 240);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "naslov naslov naslov"
+      "prvi drugi treci"
+      "cetvrti peti sesti";
+  }
+  
+  .naslov {
+      margin-top: 5%;
+      grid-area: naslov;
+    }
+  
+  .prvi { grid-area: prvi; }
+  
+  .drugi { grid-area: drugi; }
+  
+  .treci { grid-area: treci; }
+  
+  .cetvrti { grid-area: cetvrti; }
+  
+  .peti { grid-area: peti; }
+  
+  .sesti { grid-area: sesti; }
+  
+.container div img {
+    height: 350px;
+    width: 370px;
+}
