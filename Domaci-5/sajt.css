@@ -87,7 +87,7 @@ nav a {
     row-gap: 0.5rem;
 }
 
-#main p {
+#main p, .container p, #main2 p {
     color: grey;
 }
 
@@ -103,11 +103,13 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 0.5rem;
 }
 
 #main div section img{
     width: 150px;
     height: 100px;
+    margin-bottom: 2%;
 }
 
 .container {
@@ -129,7 +131,11 @@ nav a {
       margin-top: 5%;
       grid-area: naslov;
     }
-  
+
+.cetvrti, .peti, .sesti {
+    margin-bottom: 20%;
+}
+
   .prvi { grid-area: prvi; }
   
   .drugi { grid-area: drugi; }
@@ -145,4 +151,18 @@ nav a {
 .container div img {
     height: 350px;
     width: 370px;
+}
+
+#main2 {
+    height: 200vh;
+    text-align: center;
+}
+
+#main2 section {
+    display: flex;
+}
+
+#main2 section img {
+    height: 200px;
+    width: 200px;
 }
