@@ -5,9 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemoni</title>
-    <script src="./pokemoni.js"></script>
+    <script src="./pokemoni.js" defer></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #pokemoni {
+            display: flex;
+            column-gap: 2rem;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="pokemoni">
+        <button id="prikaz">PRIKAZI POKEMONE</button>
+
+        <button id="pobednik">PRIKAZI NAJJACEG POKEMONA</button>
+    </div>
 </body>
 </html>
