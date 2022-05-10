@@ -69,5 +69,3 @@ const najjaci = (niz) => {
 
     return niz.pop()
 }
-
-    console.log(najjaci(pokemoni));
