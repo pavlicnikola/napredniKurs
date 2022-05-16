@@ -1,5 +1,5 @@
 console.log(
-    '%cDanas je lep dan. %cAli mi ipak ucimo programiranje!',
+    '% cDanas je lep dan. %cAli mi ipak ucimo programiranje!',
     'color: green; background-color: yellow;',
     'color: red;'
 )
