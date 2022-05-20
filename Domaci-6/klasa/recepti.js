@@ -6,7 +6,11 @@ class Sastojak {
     }
 
     ukupnaCena() {
-        return `Ukupna cena je ${parseInt(this.kolicina) * parseFloat(this.cena)} dinara`
+        return parseInt(this.kolicina) * parseFloat(this.cena)
+    }
+
+    opisSastojka () {
+        return this.ime + ' ' + this.kolicina
     }
 }
 
@@ -16,27 +20,29 @@ let secerUPrahu = new Sastojak('secer u prahu', '100 grama', '0.3 dinara po gram
 let mleveniKeks = new Sastojak('mleveni keks', '500 grama', '0.66 dinara po gramu')
 let maline = new Sastojak('maline', '400 grama', '1.075 dinara po gramu')
 
-let Sastojci = [slatkaPavlaka, kiselaPavlaka, secerUPrahu, mleveniKeks, maline]
+let sastojciZaTortuOdMalina = [slatkaPavlaka, kiselaPavlaka, secerUPrahu, mleveniKeks, maline]
 
 class Recept {
-    constructor(naziv, tezina, Sastojci) {
+    constructor(naziv, tezina, sastojci) {
         this.naziv = naziv
         this.tezina = tezina
-        this.Sastojci = Sastojci
+        this.sastojci = sastojci
     }
 
-    ukupnaCena() {
+    cenaRecepta() {
         let ukupnaCena = 0
-        Sastojci.forEach(Sastojak => {
-            ukupnaCena += Sastojak.cena
+        this.sastojci.forEach(s => {
+            ukupnaCena += parseFloat(s.ukupnaCena())
         })
 
         return `Ukupna cena ovog recepta je ${ukupnaCena}`
     }
 
-    ispisRecepta() {
-        return
+    opisRecepta() {
+        
     }
 }
 
-let tortaOdMalina = new Recept('torta od malina', 'brz i lak letnji recept', )
+let tortaOdMalina = new Recept('torta od malina', 'brz i lak letnji recept', sastojciZaTortuOdMalina)
+
+console.log()
