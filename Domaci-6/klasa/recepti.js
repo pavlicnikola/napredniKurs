@@ -26,7 +26,12 @@ class Recept {
     }
 
     ukupnaCena() {
-        return `Ukupna cena ovog recepta je ${}`
+        let ukupnaCena = 0
+        Sastojci.forEach(Sastojak => {
+            ukupnaCena += Sastojak.cena
+        })
+
+        return `Ukupna cena ovog recepta je ${ukupnaCena}`
     }
 
     ispisRecepta() {
@@ -34,6 +39,4 @@ class Recept {
     }
 }
 
-let tortaOdMalina = new Recept('torta od malina', '', )
-
-console.log(tortaOdMalina)
+let tortaOdMalina = new Recept('torta od malina', 'brz i lak letnji recept', )
