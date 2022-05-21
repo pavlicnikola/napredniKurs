@@ -61,6 +61,5 @@ class Recept {
 }
 
 let tortaOdMalina = new Recept('torta od malina', 'brz i lak letnji recept', sastojciZaTortuOdMalina)
-let Karbonara = new Recept('Karbonara spagete', 'lak recept bez komplikacija', sastojciZaKarbonaru)
-
-        console.log(Karbonara)
+let karbonara = new Recept('Karbonara spagete', 'lak recept bez komplikacija', sastojciZaKarbonaru)
+        console.log(karbonara.opisRecepta());
