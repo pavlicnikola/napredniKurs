@@ -33,7 +33,7 @@
 
 //4. Sta bi se desilo da se izostavi e.preventDefault()?
 //   Dopuniti kod tako da se objekti koji sadrze ime, prezime i godine smestaju u niz studenti.
-//   Zasto u 42. liniji koristimo map umesto da direktno stavimo ta.value = studenti?
+//   Zasto u 55. liniji koristimo map umesto da direktno stavimo ta.value = studenti?
 
 let studenti = []
 const forma = document.querySelector('#student-forma')
